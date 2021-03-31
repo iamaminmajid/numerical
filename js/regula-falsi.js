@@ -24,10 +24,10 @@ function iteration(){
 	let fb = check(b).toFixed(9);
 
 	if(r1Changed === false){
-		fa = check(a).toFixed(4);
+		fa = check(a).toFixed(9);
 	}
 	if(r2Changed === false){
-		fb = check(b).toFixed(4);
+		fb = check(b).toFixed(9);
 	}
 	
 	let sol = checkR(a,b,fa,fb).toFixed(10);
@@ -49,10 +49,10 @@ function iteration(){
 	}
 	formatedEq = formatedEq.replace(/x/g, "("+sol+")");
 
-	if(sol > r1){
+	if((fsol * fb) < 0){
 		r1 = sol;
 		r1Changed = true;
-	}else{
+	}else if((fsol * fa) < 0 ){
 		r2 = sol;
 		r2Changed = true;
 	}
@@ -63,7 +63,7 @@ function iteration(){
 	</div>
 
 	<div class="solver">
-		[${a},${b}]
+		[<sub>${fa}</sub><sup>a</sup>${a},${b}<sup>b</sup><sub>${fa}</sub>]
 	</div>
 
 	</div>`;
