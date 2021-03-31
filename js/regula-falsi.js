@@ -23,13 +23,6 @@ function iteration(){
 	let fa = check(a).toFixed(9);
 	let fb = check(b).toFixed(9);
 
-	if(r1Changed === false){
-		fa = check(a).toFixed(9);
-	}
-	if(r2Changed === false){
-		fb = check(b).toFixed(9);
-	}
-	
 	let sol = checkR(a,b,fa,fb).toFixed(10);
 
 	let fsol = check(sol).toFixed(10);
@@ -56,84 +49,83 @@ function iteration(){
 		r2 = sol;
 		r2Changed = true;
 	}
-
-	document.querySelector('.solution').innerHTML += `<div class="sol">
-	<div class="solver">
-	Range:
-	</div>
-
-	<div class="solver">
-		[<sub>${fa}</sub><sup>a</sup>${a},${b}<sup>b</sup><sub>${fa}</sub>]
-	</div>
-
-	</div>`;
-
-	document.querySelector('.solution').innerHTML += `<div class="sol">
-	<div class="solver">
-		x<sub>${it}</sub> = 
-	</div>
-
-	<div class="solver">
-		<div class="upper">
-			<div id="a">a</div>
-			<div id="op">.</div>
-			<div id="fb">f(b)</div>
-			<div id="op">-</div>
-			<div id="b">b</div>
-			<div id="op">.</div>
-			<div id="fa">f(a)</div>
-		</div>
-		<div class="lower">
-			<div id="fb">f(b)</div>
-			<div id="op">-</div>
-			<div id="fa">f(a)</div>
+	document.querySelector('.solution').innerHTML += `<div class="step">
+	<div class="sol">
+		<div class="solver">
+		Range:
 		</div>
 
+		<div class="solver">
+			[<sub>${fa}</sub><sup>a</sup>${a},${b}<sup>b</sup><sub>${fa}</sub>]
+		</div>
 	</div>
 
-	<div class="solver">
-		<div class="upper">
-			<div id="a">${a}</div>
-			<div id="op">.</div>
-			<div id="fb">${fb}</div>
-			<div id="op">-</div>
-			<div id="b">${b}</div>
-			<div id="op">.</div>
-			<div id="fa">${fa}</div>
-		</div>
-		<div class="lower">
-			<div id="fb">${fb}</div>
-			<div id="op">-</div>
-			<div id="fa">${fa}</div>
+	<div class="sol">
+	
+		<div class="solver">
+			x<sub>${it}</sub> = 
 		</div>
 
+		<div class="solver">
+			<div class="upper">
+				<div id="a">a</div>
+				<div id="op">.</div>
+				<div id="fb">f(b)</div>
+				<div id="op">-</div>
+				<div id="b">b</div>
+				<div id="op">.</div>
+				<div id="fa">f(a)</div>
+			</div>
+			<div class="lower">
+				<div id="fb">f(b)</div>
+				<div id="op">-</div>
+				<div id="fa">f(a)</div>
+			</div>
+
+		</div>
+
+		<div class="solver">
+			<div class="upper">
+				<div id="a">${a}</div>
+				<div id="op">.</div>
+				<div id="fb">${fb}</div>
+				<div id="op">-</div>
+				<div id="b">${b}</div>
+				<div id="op">.</div>
+				<div id="fa">${fa}</div>
+			</div>
+			<div class="lower">
+				<div id="fb">${fb}</div>
+				<div id="op">-</div>
+				<div id="fa">${fa}</div>
+			</div>
+
+		</div>
+
+		<div class="solver">
+		= ${sol}
+		</div>
+
 	</div>
 
-	<div class="solver">
-	= ${sol}
-	</div>
+	<div class="sol">
+		<div class="solver">
+			f(x<sub>${it}</sub>) = 
+		</div>
 
-	</div>`;
+		<div class="solver">
+			f(${sol}) = 
+		</div>
 
-	document.querySelector('.solution').innerHTML += `<div class="sol">
-	<div class="solver">
-		f(x<sub>${it}</sub>) = 
-	</div>
+		<div class="solver">
+			${formatedEq}
+		</div>
 
-	<div class="solver">
-		f(${sol}) = 
-	</div>
+		<div class="solver">
+		= ${fsol}
+		</div>
 
-	<div class="solver">
-		${formatedEq}
-	</div>
-
-	<div class="solver">
-	= ${fsol}
-	</div>
-
-	</div>`;
-
+	</div></div>`;
 	it++;
 
 

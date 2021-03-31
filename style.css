@@ -59,3 +59,26 @@ button {
     position: relative;
     top: 28px;
 }
+.step::before {
+    content: counter(step);
+    background: #333;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    margin-left: 9px;
+    margin-top: 6px;
+}
+
+.solution {
+    counter-reset: step;
+}
+.step {
+    background: #cccccc;
+    padding: 5px;
+    margin: 6px;
+    counter-increment: step;
+}
