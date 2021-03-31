@@ -49,13 +49,24 @@ function iteration(){
 	}
 	formatedEq = formatedEq.replace(/x/g, "("+sol+")");
 
-	if(fsol < 0){
+	if(sol > r1){
 		r1 = sol;
 		r1Changed = true;
 	}else{
 		r2 = sol;
 		r2Changed = true;
 	}
+
+	document.querySelector('.solution').innerHTML += `<div class="sol">
+	<div class="solver">
+	Range:
+	</div>
+
+	<div class="solver">
+		[${a},${b}]
+	</div>
+
+	</div>`;
 
 	document.querySelector('.solution').innerHTML += `<div class="sol">
 	<div class="solver">
