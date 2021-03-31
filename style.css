@@ -28,3 +28,34 @@
 	background: #e4e4e4;
 	margin: 7px;
 }
+.question input {
+    padding: 6px;
+    margin-right: 15px;
+    font-size: 15px;
+}
+.question label {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.question .input {
+    display: inline-flex;
+    flex-direction: column;
+}
+.question {
+    padding: 25px;
+    background: #d2e9ec;
+    margin: 7px;
+    font-family: sans-serif;
+}
+button {
+    background: #ff5722;
+    border: 0;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    position: relative;
+    top: 28px;
+}

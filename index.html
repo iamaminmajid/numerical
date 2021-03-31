@@ -10,6 +10,25 @@
 </head>
 
 <body>
+	<div class="question">
+		<div class="input">
+			<label for="eq">Enter Equation</label>
+			<input type="text" id="eq" placeholder="x^4-2x^3-4x^2+4x+4" value="x^4-2x^3-4x^2+4x+4">
+		</div>
+
+		<div class="input">
+			<label for="r1">Enter Range Starting</label>
+			<input type="text" id="r1" placeholder="-0.8" value="-0.8">
+		</div>
+
+		<div class="input">
+			<label for="r2">Enter Range Ending</label>
+			<input type="text" id="r2" placeholder="-0.8" value="-0.7">
+		</div class="input">
+
+		<div class="input"><button onClick="iteration()">Solve 1 Step</button></div>
+		<p>Question will be solved step-by-step, you'll have to click the button each time to get next step.</p>
+	</div>
 	<div class="solution">
 		
 	</div>

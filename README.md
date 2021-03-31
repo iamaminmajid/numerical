@@ -3,4 +3,5 @@ This is an experimental repo, I'm just trying to solve a few numerical problems 
 
 It helps you, you can support me by giving it a star!
 
-Thanks!
+## Available Solvers:
+1. Regula-Falsi Method Solver
