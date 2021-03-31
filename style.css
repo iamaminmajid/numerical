@@ -1,0 +1,30 @@
+.upper {
+    border-bottom: 1px solid #333;
+}
+
+.solver {
+    display: inline-block;
+    margin-right:30px;
+}
+.solver>div>div {
+    padding: 4px;
+}
+.solver:nth-child(3)>div>div:not(#op)::after {
+    content: ") ";
+}
+.solver:nth-child(3)>div>div:not(#op)::before {
+    content: " (";
+}
+.upper, .lower {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.sol{
+	display: flex;
+	align-items: center;
+    font-size: 18px;
+	padding: 10px 20px;
+	background: #e4e4e4;
+	margin: 7px;
+}
