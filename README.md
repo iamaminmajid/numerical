@@ -6,4 +6,4 @@ It helps you, you can support me by giving it a star!
 Try it out: https://iamaminmajid.github.io/numerical/
 
 ## Available Solvers:
-1. Regula-Falsi Method Solver
+1. Regula-Falsi Method Solver / Secant Method
