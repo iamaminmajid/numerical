@@ -56,7 +56,7 @@ function iteration(){
 		</div>
 
 		<div class="solver">
-			[<sub>${fa}</sub><sup>a</sup>${a},${b}<sup>b</sup><sub>${fa}</sub>]
+			[<sub>${fa}</sub><sup>a</sup>${a},${b}<sup>b</sup><sub>${fb}</sub>]
 		</div>
 	</div>
 
