@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Numerical Computing</title>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.3.0/math.js" integrity="sha512-bd8Oth+p1rTn+/iUFHsSozuYn7JpmH59vMWe6L+M3huScB/SMTXWkQoME3Ytk0sbGJ40VGp2mO2b8K8FNrewfQ==" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/decimal.js/10.2.1/decimal.min.js" integrity="sha512-wgpDL499xiOG58wZV570SA98gzalMPfRsetJijSB4s2UwY5xlgaiE6YrV9KOI80+hJB2HTFl1o4vYdXhTl0T5g==" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.3.0/math.js"crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/decimal.js/10.2.1/decimal.min.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,29 +16,28 @@
 		<li><a href="bisection-method.php">Bi-Section Method</a></li>
 	</ul>
 	<div class="question">
-		<h2>Regula-Falsi/Secant Method</h2>
+		<h2>Raphson Method</h2>
 		<div class="input">
 			<label for="eq">Enter Equation</label>
-			<input type="text" id="eq" placeholder="x^4-2x^3-4x^2+4x+4" value="x^4-2x^3-4x^2+4x+4">
+			<input type="text" id="eq" placeholder="x^sin2 - 4" value="x^sin(2) - 4">
 		</div>
 
 		<div class="input">
 			<label for="r1">Enter Range Starting</label>
-			<input type="text" id="r1" placeholder="-0.8" value="-0.8">
+			<input type="text" id="r1" placeholder="4.5" value="4.5">
 		</div>
 
 		<div class="input">
 			<label for="r2">Enter Range Ending</label>
-			<input type="text" id="r2" placeholder="-0.8" value="-0.7">
+			<input type="text" id="r2" placeholder="4.6" value="4.6">
 		</div class="input">
 
 		<div class="input"><button onClick="iteration()">Solve 1 Step</button></div>
-		<p>Regula-Falsi and Secant Method have almost the same steps.</p>
 		<p>Question will be solved step-by-step, you'll have to click the button each time to get next step.</p>
 	</div>
 	<div class="solution">
 		
 	</div>
-	<script src="js/regula-falsi.js"></script>
+	<script src="js/raphson.js"></script>
 </body>
 </html>

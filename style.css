@@ -82,3 +82,26 @@ button {
     margin: 6px;
     counter-increment: step;
 }
+ul li a {
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    border-radius: 3px;
+    background: #e91e63;
+    font-family: sans-serif;
+    color: #fff;
+}
+ul li {
+    display: inline-block;
+    margin-right: 5px;
+    text-decoration: none;
+}
+ul {
+    padding: 0;
+    margin: 8px;
+    list-style: none;
+    margin-top: 30px;
+}
+ul li a:hover{
+    background: #000;
+}

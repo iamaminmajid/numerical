@@ -7,3 +7,5 @@ Try it out: https://iamaminmajid.github.io/numerical/
 
 ## Available Solvers:
 1. Regula-Falsi Method Solver / Secant Method
+2. Bi-Section Method
+3. Raphson Method

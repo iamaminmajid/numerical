@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.3.0/math.js" integrity="sha512-bd8Oth+p1rTn+/iUFHsSozuYn7JpmH59vMWe6L+M3huScB/SMTXWkQoME3Ytk0sbGJ40VGp2mO2b8K8FNrewfQ==" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/decimal.js/10.2.1/decimal.min.js" integrity="sha512-wgpDL499xiOG58wZV570SA98gzalMPfRsetJijSB4s2UwY5xlgaiE6YrV9KOI80+hJB2HTFl1o4vYdXhTl0T5g==" crossorigin="anonymous"></script>
+</head>
+<body>
+	
+	<script>
+		const f = math.parse('x^sin2 - 4')
+		const x = math.parse('x')
+		var d = math.derivative(f, x);
+		//d = math.simplify(d);     
+
+		document.write(d);
+	</script>
+
+</body>
+</html>
